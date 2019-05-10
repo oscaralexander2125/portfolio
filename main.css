@@ -124,6 +124,15 @@ img {
   width: 100%;
 }
 
+.screenshot {
+  transition: opacity 0.2s;
+}
+
+.screenshot:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
 footer {
   
   border-top: 1px solid lightgray;
