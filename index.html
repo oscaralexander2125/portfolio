@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Portfolio | Oscar</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="my portfolio app">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
@@ -13,9 +13,26 @@
 <body>
   <header role="banner">
     <nav role="navigation">
-      <h1>Oscar A. Reyes</h1>
+      <div class="nav-div">
+        <div class="name-div">
+          <h1 class="mobile-name">Oscar A. Reyes</h1>
+        </div>
+        <label for="toggle" class="burger-label">&#9776;</label>
+        <input type="checkbox" id="toggle" />
+        <div class="menu">
+          <a href="#" class="menu-links home">Home</a>
+          <a href="#about" class="menu-links">About</a>
+          <a href="#projects" class="menu-links">Projects</a>
+          <a href="#contact-section" class="menu-links">Contact</a>
+        </div>
+      </div>
     </nav>
-    <div class="contacts">
+    <div class="contacts" id="contact">
+      <h1 class="desktop-name">Oscar A. Reyes</h1>
+      <div class="face">
+        <img src="images/portfolio.jpg" class="profile-pic" />
+      </div>
+      <div id="contact-section"></div>
       <a class="icon-link" href="mailto: oscarreyes2194@gmail.com"><img class="contacts-icons" src="images/mail-icons.jpg" /></a>
       <a class="icon-link" target="_blank" href="https://github.com/oscaralexander2125"><img class="contacts-icons" src="images/GitHub-Mark.png" /></a>
       <a class="icon-link" target="_blank" href="https://linkedin.com/in/oscarreyesdeveloper"><img class="contacts-icons" src="images/linkedin-icon.png" /></a>
@@ -24,7 +41,7 @@
   </header>
   <main>
     <div class="about-div">
-      <h2 class="about">About</h2>
+      <h2 class="about" id="about">About</h2>
       <div class="para-div">
         <p class="paragraph">Hi! I’m Oscar, a fullstack developer and runner during my free time. 
           I love solving problems and understanding why things work the way they work. 
@@ -36,7 +53,7 @@
       </div>
     </div>
     <div class="work-div">
-      <h2 class="work">WebDev</h2>
+      <h2 class="work" id="projects">WebDev</h2>
       <div class="projects">
         <div class="project project-1">
           <h3 class="one-book">One Book</h3>

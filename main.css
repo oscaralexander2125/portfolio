@@ -7,14 +7,54 @@ body {
   font-family: 'Karla', sans-serif;
 }
 
-nav {
+.nav-div {
   border-bottom: 1px solid lightgray;
-  margin: 0 20px;
+  text-align: right;
+  line-height: 75px;
+  box-shadow: 0px 3px 15px lightgrey;
+}
+
+.mobile-name {
+  display: none;
+}
+
+.menu {
+  margin: 0 30px 0 0
+}
+
+.menu a {
+  clear: right;
+  text-decoration: none;
+  color: gray;
+  margin: 0 10px;
+  line-height: 70px;
+}
+
+label {
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 87px;
+  display: none;
+  width: 26px;
+  float: right;
+}
+
+#toggle {
+  display: none;
 }
 
 .contacts {
   text-align: center;
   margin-top: 25px;
+}
+
+.profile-pic {
+  width: 40%;
+  margin: 20px 0 25px;
+}
+
+#contact-section {
+  padding: 10px;
 }
 
 .icon-link {
@@ -30,6 +70,10 @@ h1 {
   line-height: 30px;
   text-align: center;
   font-size: 36px;
+}
+
+.desktop-name {
+  margin:30px 0;
 }
 
 .position {
@@ -187,5 +231,69 @@ footer {
   .divider {
     font-weight: bold;
     color: lightgray;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  .menu {
+    text-align: center;
+    width: 100%;
+    display: none;
+  }
+  .menu a {
+    display: block;
+    border-bottom: 1px solid lightgray;
+    margin: 0;
+  }
+
+  .home {
+    border-top: 1px solid lightgray;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+
+  #toggle:checked + .menu-links {
+    display: block;
+  }
+
+  .desktop-name {
+    display: none;
+  }
+
+  .name-div {
+    display: inline-block;
+  }
+
+  .mobile-name {
+    text-align: center;
+    margin: 25px 0 0 50px;
+    display: inline-block;
+  }
+
+  .nav-div {
+    text-align: center;
+    border-bottom: none;
+    box-shadow: 0px 5px 10px lightgrey;
+  }
+
+  .contacts {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .mobile-name {
+    margin: 25px 0 0 20px; 
+    font-size: 30px;
+  }
+
+  .nav-div {
+    text-align: left;
   }
 }
