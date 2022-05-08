@@ -1,6 +1,6 @@
 function runApp() {
   $('.app-screenshot-1').click(function() {
-    window.open('https://intense-river-44339.herokuapp.com/sign-in', '_blank')
+    window.open('https://marvelous-tulumba-d99744.netlify.app/', '_blank')
   })
   
   $('.app-screenshot-2').click(function() {
